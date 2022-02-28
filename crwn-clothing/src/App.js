@@ -5,14 +5,16 @@ import './App.css';
 
 import HomePage from './pages/homepage/homepage.component.jsx';
 import ShopPage from './pages/shop/shop.component';
+import Header from './components/header/header.component';
 
 function App() {
   return (
     <div>
-        <Switch> {/* This is the equivalent to Routes in React Router v6 */}
-          <Route exact path="/" component={HomePage} />
-          <Route path="/shop" component={ShopPage}/>
-        </Switch>
+      <Header/>
+      <Switch> {/* This is the equivalent to Routes in React Router v6 */}
+        <Route exact path="/" component={HomePage} />
+        <Route path="/shop" component={ShopPage}/>
+      </Switch>
      
     </div>
   );
